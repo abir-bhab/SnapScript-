@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Transcript": {
+      "title": "Transcript",
+      "description": "A saved transcription document.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The UID of the user who owns this transcript." },
+        "title": { "type": "string", "description": "The title of the video/audio." },
+        "transcript": { "type": "string", "description": "The full text of the transcription." },
+        "date": { "type": "string", "format": "date", "description": "The date the transcription was saved." }
+      },
+      "required": ["uid", "title", "transcript", "date"]
+    }
+  },
+  "firestore": {
+    "/transcripts/{transcriptId}": {
+      "schema": { "$ref": "Transcript" },
+      "description": "Collection of saved transcripts."
+    }
+  }
+}

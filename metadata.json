@@ -1,0 +1,5 @@
+{
+  "name": "SnapScript",
+  "description": "SnapScript: Transcribe social media videos into text using Gemini AI. Paste a link, extract audio, and get your transcription in seconds.",
+  "requestFramePermissions": []
+}
